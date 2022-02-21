@@ -3,13 +3,16 @@ import 'package:velocity_x/velocity_x.dart';
 
 class ArcItemList extends StatelessWidget {
   final Map? myArcData;
-  ArcItemList({Key? key, this.myArcData}) : super(key: key);
+  final VoidCallback? onPress;
+
+  ArcItemList({Key? key, this.myArcData, this.onPress}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
         print('tap${myArcData.toString()}');
+        onPress!();
       },
       child: [
         Image.network(myArcData!["image"]),

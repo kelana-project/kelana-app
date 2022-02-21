@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class ArtworkController extends GetxController {
+class WikiController extends GetxController {
   //TODO: Implement ArtworkController
 
   final count = 0.obs;

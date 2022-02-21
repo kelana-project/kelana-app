@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../../artwork/controllers/artwork_controller.dart';
+import '../../wiki/controllers/wiki_controller.dart';
 import '../../profile/controllers/profile_controller.dart';
 import '../../read/controllers/read_controller.dart';
 import '../../store/controllers/store_controller.dart';
@@ -15,8 +15,8 @@ class HomeBinding extends Bindings {
     Get.lazyPut<ReadController>(
       () => ReadController(),
     );
-    Get.lazyPut<ArtworkController>(
-      () => ArtworkController(),
+    Get.lazyPut<WikiController>(
+      () => WikiController(),
     );
     Get.lazyPut<StoreController>(
       () => StoreController(),

@@ -1,9 +1,8 @@
-import 'package:animated_icon_button/animated_icon_button.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:kelana_app/app/modules/artwork/views/artwork_view.dart';
+import 'package:kelana_app/app/modules/wiki/views/wiki_view.dart';
 import 'package:kelana_app/app/modules/profile/views/profile_view.dart';
 import 'package:kelana_app/app/modules/read/views/read_view.dart';
 import 'package:kelana_app/app/modules/store/views/store_view.dart';
@@ -15,7 +14,7 @@ import '../controllers/home_controller.dart';
 class HomeView extends GetView<HomeController> {
   final _pages = [
     ReadView(),
-    ArtworkView(),
+    WikiView(),
     StoreView(),
     ProfileView(),
   ];
@@ -45,8 +44,8 @@ class HomeView extends GetView<HomeController> {
                   title: Text('Read'),
                   activeColor: Colors.blue),
               BottomNavyBarItem(
-                  icon: Icon(Icons.image_rounded),
-                  title: Text('Artwork'),
+                  icon: Icon(Icons.collections_bookmark_rounded),
+                  title: Text('Wiki'),
                   activeColor: Colors.orange),
               BottomNavyBarItem(
                   icon: Icon(Icons.store_rounded),

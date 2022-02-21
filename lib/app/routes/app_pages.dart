@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import 'package:kelana_app/app/modules/artwork/views/artwork_view.dart';
+import 'package:kelana_app/app/modules/wiki/views/wiki_view.dart';
 import 'package:kelana_app/app/modules/home/bindings/home_binding.dart';
 import 'package:kelana_app/app/modules/home/views/home_view.dart';
 import 'package:kelana_app/app/modules/profile/views/profile_view.dart';
@@ -26,7 +26,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.artwork,
-      page: () => ArtworkView(),
+      page: () => WikiView(),
     ),
     GetPage(
       name: _Paths.store,

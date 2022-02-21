@@ -32,9 +32,7 @@ class HomeView extends GetView<HomeController> {
             preferredSize: Size.fromHeight(kToolbarHeight),
           ),
           body: _pages[controller.tabIndex.value],
-          floatingActionButtonLocation:
-              FloatingActionButtonLocation.centerFloat,
-          floatingActionButton: BottomNavyBar(
+          bottomNavigationBar: BottomNavyBar(
             onItemSelected: controller.changeTabIndex,
             selectedIndex: controller.tabIndex.value,
             curve: Curves.easeIn,
@@ -56,7 +54,7 @@ class HomeView extends GetView<HomeController> {
                   title: Text('Account'),
                   activeColor: Colors.teal),
             ],
-          ).card.roundedLg.make().px8(),
+          ),
         ),
       ),
     );

@@ -9,6 +9,7 @@ abstract class Routes {
   static const artwok = _Paths.artwork;
   static const store = _Paths.store;
   static const profile = _Paths.profile;
+  static const arcDetail = _Paths.arcDetail;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const artwork = '/artwork';
   static const store = '/store';
   static const profile = '/profile';
+  static const arcDetail = '/arcdetail';
 }

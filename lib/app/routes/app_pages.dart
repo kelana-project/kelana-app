@@ -1,11 +1,13 @@
 import 'package:get/get.dart';
 
-import 'package:kelana_app/app/modules/artwork/views/artwork_view.dart';
-import 'package:kelana_app/app/modules/home/bindings/home_binding.dart';
-import 'package:kelana_app/app/modules/home/views/home_view.dart';
-import 'package:kelana_app/app/modules/profile/views/profile_view.dart';
-import 'package:kelana_app/app/modules/read/views/read_view.dart';
-import 'package:kelana_app/app/modules/store/views/store_view.dart';
+import '../modules/arcdetail/bindings/arcdetail_binding.dart';
+import '../modules/arcdetail/views/arcdetail_view.dart';
+import '../modules/artwork/views/artwork_view.dart';
+import '../modules/home/bindings/home_binding.dart';
+import '../modules/home/views/home_view.dart';
+import '../modules/profile/views/profile_view.dart';
+import '../modules/read/views/read_view.dart';
+import '../modules/store/views/store_view.dart';
 
 part 'app_routes.dart';
 
@@ -35,6 +37,11 @@ class AppPages {
     GetPage(
       name: _Paths.profile,
       page: () => ProfileView(),
+    ),
+    GetPage(
+      name: _Paths.arcDetail,
+      page: () => ArcdetailView(),
+      binding: ArcdetailBinding(),
     ),
   ];
 }

@@ -14,7 +14,7 @@ class ArcdetailView extends GetView<ArcdetailController> {
       ),
       body: Center(
         child: Text(
-          'ArcdetailView is working',
+          'ArcdetailView is working ${controller.count}',
           style: TextStyle(fontSize: 20),
         ),
       ),
